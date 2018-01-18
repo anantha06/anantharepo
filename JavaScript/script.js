@@ -3,7 +3,7 @@ var questionsLeft = ' [' + questions + ' questions left]';
 var name = prompt('Please type an NAME' + questionsLeft);
 questions -= 1;
 var questionsLeft = ' [' + questions + ' questions left]';
-var colr = prompt('Please type an Color' + questionsLeft);
+var colr = prompt('Please type an top 16 Color ' + questionsLeft);
 questions -= 1;
 questionsLeft = ' [' + questions + ' questions left]';
 var adjective = prompt('Please type an adjective' + questionsLeft);
@@ -22,22 +22,22 @@ questionsLeft = ' [' + questions + ' questions left]';
 
 var rand2 = prompt('Please type a noun' + questionsLeft);
 alert('All done. Ready for the message?');
-var sentence = "<p>ONCE upon a time there was a prince named <span style='color:"+colr+"'>" +name+"</span>";
-sentence+=" He was <span style='color:"+colr+"'>" +name+"</span> who wanted to marry a princess; but she would have to be a real princess." ;
-sentence+=" He travelled <span style='color:"+colr+"'>" +name+"</span> all over the world to find one, but nowhere could he get what he wanted.";
+var sentence = "<p>ONCE upon a time there was a prince named <div style='color:"+colr+"'>" +name+"</div>";
+sentence+=" He was <div style='color:"+colr+"'>" +adjective+"</div> who wanted to marry a princess; but she would have to be a real princess." ;
+sentence+=" He travelled <div style='color:"+colr+"'>" +name+"</div> all over the world to find one, but nowhere could he get what he wanted.";
 sentence+=" There were princesses enough, but it was difficult to find out whether they were real ones.";
-sentence+=" There was always something about<span style='color:"+colr+"'>" +name+"</span> them that was not as it should be.";
+sentence+=" There was always something about<div style='color:"+colr+"'>" +noun+"</div> them that was not as it should be.";
 sentence+=" So he came home again and was sad, for he would have liked very much to have a real princess.";
 sentence+=" One evening a terrible storm came on; there was thunder and lightning, and the rain poured down in torrents.";
 sentence+=" Suddenly a knocking was heard at the city gate, and the old king went to open it.";
-sentence+=" It was a princess standing <span style='color:"+colr+"'>" +name+"</span> out there in front of the gate.";
+sentence+=" It was a princess standing <div style='color:"+colr+"'>"+verb+"</div> out there in front of the gate.";
 sentence+=" But, good gracious! what a sight the rain and the wind had made her look.";
 sentence+=" The water ran down from her hair and clothes; it ran down into the toes of her shoes and out again at the heels.";
 sentence+=" And yet she said that she was a real princess.</p>";
 
-sentence+="<p>Well, we'll soon find that <span style='color:"+colr+"'>" +name+"</span> out, thought the old queen. But she said nothing, went into the bed-room, took all the bedding off the bedstead, and laid a pea on the bottom; then she took twenty mattresses and laid them on the pea, and then twenty eider-down beds on top of the mattresses.On this the princess had to lie all night. In the morning she was asked how she had slept.Oh, very badly! said she. I have scarcely closed my eyes all night. Heaven only knows what was in the bed, but I was lying on something hard, so that I am black and blue all over my body. It's horrible!";
+sentence+="<p>Well, we'll soon find that <div style='color:"+colr+"'>" +rand1+"</div> out, thought the old queen. But she said nothing, went into the bed-room, took all the bedding off the bedstead, and laid a pea on the bottom; then she took twenty mattresses and laid them on the pea, and then twenty eider-down beds on top of the mattresses.On this the princess had to lie all night. In the morning she was asked how she had slept.Oh, very badly! said she. I have scarcely closed my eyes all night. Heaven only knows what was in the bed, but I was lying on something hard, so that I am black and blue all over my body. It's horrible!";
 sentence+="Now they knew that she was a real princess because she had felt the pea right through the twenty mattresses and the twenty eider-down beds.";
-sentence+="Nobody but a real princess could be as sensitive as that. ";
+sentence+="Nobody but a real princess could be<div style='color:"+colr+"'>" +rand2+"</div>  as sensitive as that. ";
 sentence+="So the prince took her for his wife, for now he knew that he had a real princess; and the pea was put in the museum, where it may still be seen, if no one has stolen it. </p>";
 
 document.write(sentence);
