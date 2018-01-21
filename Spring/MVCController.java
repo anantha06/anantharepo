@@ -17,7 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class MVCController
 {  
     @Autowired  
-    EmployeeDao dao;  
+    EmployeeDemo dao;  
 
     @RequestMapping("/")  
     public ModelAndView initPage(){  
