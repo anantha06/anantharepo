@@ -10,7 +10,7 @@ public class App {
     public static void main( String[] args ){
         
     	ApplicationContext con = new ClassPathXmlApplicationContext("applicationContext.xml");
-        EmployeeDao dao=(EmployeeDao)con.getBean("edao");
+        EmployeeDemo dao=(EmployeeDemo)con.getBean("edao");
         List<Employee> elist=dao.getAllEmployeesRowMapper();  
         for(Employee e:elist)  
             System.out.println(e.getName()); 
