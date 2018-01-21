@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
 
-public class EmployeeDao {  
+public class EmployeeDemo {  
 	private JdbcTemplate jdbcTemplate;  
 	  
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {  
