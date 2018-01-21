@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript"src="myscripts.js"></script>
+</head>
+
+<body>
+
+<form>
+  <input type="checkbox" id="name" onchange="changemode()" checked>Name mode<br>
+</form> 
+
+
+<form id="gender" style="visibility:visibility">
+  <input type="radio" name="gender" id="male" value="male" checked> Male<br>
+  <input type="radio" name="gender" id="female" value="female"> Female<br> 
+</form> 
+
+
+<form id="num" style="visibility:hidden">
+<!-- text box to get user input-->
+  <input type="text" id="inputnum">User Input:<br>
+</form>
+<div id="divage" style="visibility:visibility">
+<input type="text" id="inputname">User Input:<br>
+<input type="number"  id="age">Age:<br>
+<!--triggering analyse function-->
+
+</div>
+<button type="button" id="analyze" onclick="analyse()" >Analyze</button>
+<p id="display"></p>
+
+</body>
+</html>
